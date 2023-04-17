@@ -1,0 +1,16 @@
+baseURL = 'https://ficelle.netlify.app/'
+languageCode = 'fr-fr'
+defaultContentLanguage = 'fr'
+title = 'Ficelle'
+
+enableRobotsTXT = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
