@@ -7,20 +7,47 @@
 
   
   {{ end }}
-  <body>
-    <div class="bg-red-400">
+  <body >
+    <div class="w-full md:w-10/12 bg-amber-50 mx-auto">
+    <div class="bg-red-700 ">
       <h1 class="font-pacifico uppercase text-5xl md:text-7xl xl:text-9xl text-center pt-8 pb-10 lg:pt-20 lg:pb-24">{{ if .Page.Title }}{{ .Page.Title }}{{ else }}{{ .Site.Title }}{{ end }}</h1>
     </div>
 
-    <div class="text-2xl md:text-4xl font-pacifico ">
-      <div class="pt-4 md:pt-8">
-        <p>C'est l'ami des enfants</p>
-        <p>Nous aimons les voir sourire et leurs yeux briller</p>
+    <div >
+      <div class="pt-4 md:pt-8 ">
+        <p class="my-paragraph">C'est l'ami des enfants</p>  
+        <p class="my-paragraph">Nous aimons les voir sourire et leurs yeux briller</p>
+
+        {{ $imageGirl := resources.Get "/images/girl-home.jpg" }}         
+        <img class="my-image" src="{{ $imageGirl.RelPermalink }}" alt="une fillette seule sur un chemin traîne une grosse peluche">
+
+        <p class="my-paragraph">C’est une petite communauté de passionnés</p>
+        <p class="my-paragraph">Et un lieu : le Fablab de Caylus dans le Tarn et Garonne</p>
+
+        {{ $imageSkate := resources.Get "/images/skateboard-home.jpg" }}         
+        <img class="my-image" src="{{ $imageSkate.RelPermalink }}" alt="un enfant vu de dos est assis sur un skateboard, seul sur une petite route de campagne">
+        
+        <p class="my-paragraph">C’est une idée, aider les enfants à passer les mauvais moments de la vie en leur offrant des objets que nous aurons conçus et réalisés nous-mêmes</p>
+
+        <p class="my-paragraph">Des appareils pour enfants handicapés</p>
+
+        {{ $imageChildren := resources.Get "/images/children-home.jpg" }}         
+        <img class="my-image" src="{{ $imageChildren.RelPermalink }}" alt="un enfant sur un tricycle rouge">
+
+        <p class="my-paragraph">Un doudou qui raconte des histoires</p>
+
+        {{ $imageBearPlush := resources.Get "/images/bear-plush-home.jpg" }}         
+        <img class="my-image" src="{{ $imageBearPlush.RelPermalink }}" alt="cinq peluches ourson disposées sur un banc, comme si elles dormaient">
       </div>
+      {{ block "footer" . }}
+     {{ partial "footer/footer_main.html" . }}  
+    {{ end }}
     </div>
+  </div>
     
   </body>
 </html>
 
   
+
 
