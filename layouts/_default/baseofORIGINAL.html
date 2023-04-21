@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head/head_main.html" . -}}
+
+    <body class="bg-mycolor-200 container mx-auto">
+        <main >
+        {{- block "main" . }}{{- end }}
+        </main>
+    {{- partial "footer/footer_main.html" . -}} 
+
+
+    
+
+
+    </body>
+</html>

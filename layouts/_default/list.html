@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div >
+    <div >
+        <div >
+            <h1>{{ .Title }}</h1>
+            
+            {{ .Content }}
+            
+            {{ range .Pages }}
+                <div>
+                    TESTS DE LIST.HTML
+                </div>
+            
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

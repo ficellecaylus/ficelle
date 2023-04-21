@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    
+    {{ partial "head/head_main.html" .}}
+    
+  
+  
+
+    <body class=" container mx-auto">
+      <div class="w-full md:w-10/12 bg-amber-50 mx-auto">
+        <main >
+          {{- block "main" . }}{{- end }}
+        </main>
+        
+        {{- partial "footer/footer_main.html" . -}}  
+      
+
+
+    
+
+      </div>
+    </body>
+</html>

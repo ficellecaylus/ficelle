@@ -39,11 +39,16 @@
   h4 {
     @apply text-base font-medium italic py-1.5;
   }
+
+  /* paragraphes */
+  p {
+    @apply my-paragraph;
+  }
 }
 
 @layer components {
   .my-paragraph {
-    @apply text-2xl text-center font-pacifico mx-auto pt-4 pb-6 w-10/12; 
+    @apply text-2xl text-center font-pacifico mx-auto pt-2 pb-1 w-10/12; 
     @apply md:text-4xl md:pt-8 md:pb-12 md:w-8/12 ;
   }
 

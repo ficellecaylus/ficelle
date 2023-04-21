@@ -1,12 +1,14 @@
 ---
 author: "ficelle"
-title: "{{ replace .Name "-" " " | title }}"
+title: ""
 description : ""
 categories: []
 tags: []
 
-date: {{ .Date }}
+date: 2023-04-19T11:10:56+02:00
 draft: false
 ---
 
 
+UN TEXTE
+## Un TITRE 
